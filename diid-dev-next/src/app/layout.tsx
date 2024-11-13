@@ -33,7 +33,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Wrap your layout with SidebarProvider */}
         <SidebarProvider>
           {/* Sidebar Component */}
           <AppSidebar />
@@ -41,7 +40,9 @@ export default function RootLayout({
             {/* Trigger to open the Sidebar */}
             <SidebarTrigger />
             {/* Page Content */}
-            {children}
+            <div className="p-14">
+              {children}
+            </div>
           </main>
         </SidebarProvider>
       </body>
