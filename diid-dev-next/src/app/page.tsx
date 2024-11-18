@@ -1,9 +1,10 @@
+import PortfolioCard from "@/components/PortfolioCard";
 
 
 export default function Home() {
   return (
-    <div>
-      <h1>This is Homepage</h1>
+    <div className="grid grid-cols-3 gap-8">
+      <PortfolioCard />
     </div>
   );
 }
