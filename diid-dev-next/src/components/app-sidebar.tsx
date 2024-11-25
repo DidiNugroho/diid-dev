@@ -1,4 +1,4 @@
-import { LibraryBig, Monitor, UserPen, Github, ScrollText, Braces } from "lucide-react"
+import { LibraryBig, Monitor, UserPen, Github, ScrollText } from "lucide-react"
 
 import {
   Sidebar,
@@ -23,11 +23,6 @@ const items = [
     title: "About",
     url: "/about",
     icon: UserPen,
-  },
-  {
-    title: "Skills",
-    url: "/skills",
-    icon: Braces,
   },
   {
     title: "Experiences",
