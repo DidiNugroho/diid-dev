@@ -24,13 +24,13 @@ export default function PortfolioCard(project: Project) {
           <CardDescription>
             <p>{project.description}</p>
           </CardDescription>
-          <div className="mt-4">
-            <Image src={project.imageUrl} width={500} height={500} alt="Project Image" />
+          <div className="mt-4 flex justify-center items-center">
+            <Image src={project.imageUrl} width={500} height={500} className="w-96 h-60 object-cover rounded-lg" alt="Project Image" />
           </div>
           <div className="mt-4">
             <p>Tech Stack:</p>
             {project.technologies.map((tech, index) => (
-              <Button key={index} variant="secondary" className="mr-2 mb-2 mt-2">{tech}</Button>
+              <Button key={index} className="mr-2 mb-2 mt-2 bg-slate-300">{tech}</Button>
             ))}
           </div>
         </CardContent>
